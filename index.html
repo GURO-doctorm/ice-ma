@@ -10,35 +10,27 @@
         <title>MILO ICE</title>
         <!--====== Favicon Icon ======-->
         <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-        <!--====== Preload Critical Images ======-->
-        <link rel="preload" href="assets/images/home-dessert/hero/xice.png" as="image">
-        <link rel="preload" href="assets/images/home-dessert/hero/heroros.png" as="image">
-        <!--====== Critical CSS Only ======-->
+        <!--====== Google Fonts ======-->
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--====== Flaticon css ======-->
+        <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_bistly.css">
+        <!--====== FontAwesome css ======-->
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+        <!--====== Bootstrap css ======-->
         <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+        <!--====== Slick-popup css ======-->
+        <link rel="stylesheet" href="assets/css/plugins/slick.css">
+        <!--====== Magnific-popup css ======-->
+        <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+        <!--====== Nice Select CSS ======-->
+        <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+        <!--====== AOS Animation ======-->
+        <link rel="stylesheet" href="assets/css/plugins/aos.css">
+        <!--====== Common Style css ======-->
         <link rel="stylesheet" href="assets/css/common-style.css">
+        <!--====== Style css ======-->
         <link rel="stylesheet" href="assets/css/pages/home-dessert.css">
-        
-        <!--====== Non-Critical CSS (Load After) ======-->
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="assets/fonts/flaticon/flaticon_bistly.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="assets/fonts/fontawesome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="assets/css/plugins/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="assets/css/plugins/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="assets/css/plugins/nice-select.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="assets/css/plugins/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
         <style>
-    /* Critical CSS for immediate rendering */
-    .preloader { display: none !important; }
-    body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
-    .header-area { position: relative; }
-    .ds-hero-sec { min-height: 100vh; background-color: #F9F4FC; }
-    .hero-content h1 { font-size: 3rem; margin: 0; color: #0A0B0C; }
-    .text-box p { font-size: 1.1rem; color: #3B3C3D; }
-    .theme-btn { display: inline-block; padding: 12px 30px; background: #d1f3bb; color: #0A0B0C; text-decoration: none; border-radius: 5px; }
-    .bistly-author-box h2 { font-size: 2rem; color: #0A0B0C; }
-    .bistly-author-box h2 span { font-size: 1rem; color: #3B3C3D; }
-    
     .ds-footer,
     .ds-footer p,
     .ds-footer a,
@@ -52,7 +44,8 @@
     </head>
     <body class="restaurant-website">
         <!--====== Start Loader Area ======-->
-        
+        <div class="preloader">
+            <div class="loader"></div>
         </div><!--====== End Loader Area ======-->
         <!--====== Start Overlay ======-->
         <div class="offcanvas__overlay"></div>
@@ -132,7 +125,7 @@
                 <main>
                     <!--======  Start Categories Section  ======-->
                     <section class="ds-hero-sec p-r z-1">
-                        <div class="hero-shape"><img src="assets/images/home-dessert/hero/heroros.png" alt="hero shape" loading="lazy" decoding="async"></div>
+                        <div class="hero-shape"><img src="assets/images/home-dessert/hero/heroros.png" alt="hero shape"></div>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -152,11 +145,11 @@
                                             <!-- Bistly Author Box -->
                                             <div class="bistly-author-box" data-aos="fade-up" data-aos-duration="1200">
                                                 <div class="author-thumbs">
-                                                    <img src="assets/images/home-dessert/hero/WXX.png" alt="Author" loading="lazy" decoding="async">
-                                                    <img src="assets/images/home-dessert/hero/WX1.png" alt="Author" loading="lazy" decoding="async">
-                                                    <img src="assets/images/home-dessert/hero/WX4.png" alt="Author" loading="lazy" decoding="async">
-                                                    <img src="assets/images/home-dessert/hero/WX3.png" alt="Author" loading="lazy" decoding="async">
-                                                    <img src="assets/images/home-dessert/hero/miloo.png" alt="Author" loading="lazy" decoding="async">
+                                                    <img src="assets/images/home-dessert/hero/WXX.png" alt="Author">
+                                                    <img src="assets/images/home-dessert/hero/WX1.png" alt="Author">
+                                                    <img src="assets/images/home-dessert/hero/WX4.png" alt="Author">
+                                                    <img src="assets/images/home-dessert/hero/WX3.png" alt="Author">
+                                                    <img src="assets/images/home-dessert/hero/miloo.png" alt="Author">
                                                 </div>
                                                 <h2>217K+ <span>Satisfied Clients</span></h2>
                                             </div>
@@ -168,7 +161,7 @@
                         <!-- Hero Image Wrap -->
                         <div class="hero-image-wrap order-1">
                             <div class="hero-image">
-                                <img src="assets/images/home-dessert/hero/xice.png" alt="Hero Image" loading="lazy">
+                                <img src="assets/images/home-dessert/hero/xice.png" alt="Hero Image">
                             </div>
                         </div>
                     </section><!--======  End Categories Section  ======-->
@@ -239,7 +232,7 @@
                             <!-- About Wrapper -->
                             <div class="about-wrapper d-flex">
                                 <!-- About Left -->
-                                <div class="about-left-wrap bg_cover" style="background-image: url(assets/images/home-dessert/about/abour.png);" loading="lazy" data-bg="assets/images/home-dessert/about/abour.png">
+                                <div class="about-left-wrap bg_cover" style="background-image: url(assets/images/home-dessert/about/abour.png);">
                                 </div>
                                 <!-- About Right -->
                                 <div class="about-right-wrap">
@@ -479,56 +472,32 @@
                 </footer><!--====== End Footer ======-->
             </div>
         </div>
-        <!--====== Critical JS Only ======-->
+        <!--====== Jquery js ======-->
         <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+        <!--====== Bootstrap js ======-->
         <script src="assets/js/plugins/popper.min.js"></script>
+        <!--====== Bootstrap js ======-->
         <script src="assets/js/plugins/bootstrap.min.js"></script>
+        <!--====== Gsap Js ======-->
+        <script src="assets/js/plugins/gsap/gsap.min.js"></script>
+        <script src="assets/js/plugins/gsap/SplitText.min.js"></script>
+        <script src="assets/js/plugins/gsap/ScrollSmoother.min.js"></script>
+        <script src="assets/js/plugins/gsap/ScrollTrigger.min.js"></script>
+        <!--====== Waypoint js ======-->
+        <script src="assets/js/plugins/jquery.waypoints.js"></script>
+        <!--====== CounterUp js ======-->
+        <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+        <!--====== Slick js ======-->
+        <script src="assets/js/plugins/slick.min.js"></script>
+        <!--====== Magnific js ======-->
+        <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+        <!--====== Nice Select js ======-->
+        <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+        <!--====== AOS js ======-->
+        <script src="assets/js/plugins/aos.js"></script>
+        <!--====== Main js ======-->
         <script src="assets/js/common.js"></script>
+        <!--====== Creative Agency js ======-->
         <script src="assets/js/home-dessert.js"></script>
-        
-        <!--====== Lazy Load Heavy Scripts ======-->
-        <script>
-            // Load heavy scripts after page loads with delay
-            window.addEventListener('load', function() {
-                const scripts = [
-                    'assets/js/plugins/gsap/gsap.min.js',
-                    'assets/js/plugins/gsap/SplitText.min.js',
-                    'assets/js/plugins/gsap/ScrollSmoother.min.js',
-                    'assets/js/plugins/gsap/ScrollTrigger.min.js',
-                    'assets/js/plugins/jquery.waypoints.js',
-                    'assets/js/plugins/jquery.counterup.min.js',
-                    'assets/js/plugins/slick.min.js',
-                    'assets/js/plugins/jquery.magnific-popup.min.js',
-                    'assets/js/plugins/jquery.nice-select.min.js',
-                    'assets/js/plugins/aos.js'
-                ];
-                
-                // Load scripts with delay to prevent blocking
-                scripts.forEach((src, index) => {
-                    setTimeout(() => {
-                        const script = document.createElement('script');
-                        script.src = src;
-                        script.async = true;
-                        document.body.appendChild(script);
-                    }, index * 50); // 50ms delay between each script
-                });
-            });
-            
-            // Lazy load background images
-            document.addEventListener('DOMContentLoaded', function() {
-                const bgElements = document.querySelectorAll('[data-bg]');
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const bg = entry.target.getAttribute('data-bg');
-                            entry.target.style.backgroundImage = `url(${bg})`;
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                });
-                
-                bgElements.forEach(el => observer.observe(el));
-            });
-        </script>
     </body>
 </html>
